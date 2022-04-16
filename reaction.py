@@ -1,16 +1,15 @@
 from discord.ext import commands
 
-client = commands.Bot(command_prefix = '.')
-CLIENT_TOKEN = 'Nzk1NzM2MzI4NjMyMjcwODk5.X_NtNA.GAfYiBJ6vt_eq41bAqyE1a3i1pA'
+client = commands.Bot(command_prefix = '$')
 BOT_USER_ID = 795736328632270899
-ALLOWED_CHANNELS = [792940265873997885, 792800988007759892]
+ALLOWED_CHANNELS = [805931582149099600]
+CLIENT_TOKEN = "Nzk1NzM2MzI4NjMyMjcwODk5.X_NtNA.GAfYiBJ6vt_eq41bAqyE1a3i1pA"
 
 @client.event
 async def on_ready():
     print('Bot initialized.')
 
 reactions = {"0️⃣": 0, "1️⃣": 1, "2️⃣": 2, "3️⃣": 3, "4️⃣": 4, "5️⃣": 5}
-
 
 @client.event
 async def on_message(message):
@@ -59,7 +58,7 @@ async def reaction_add_remove(payload):
         contador = reaction.count - 1 + contador
         soma = (reaction.count-1)*i+soma
     if contador > 0:
-        new_post = "**Score: %.2f**" % (soma / contador)
+        new_post = "**Score: %.1f/5**" % (soma / contador)
 
         # Edit message right after the picture post
         channel = client.get_channel(payload.channel_id)
