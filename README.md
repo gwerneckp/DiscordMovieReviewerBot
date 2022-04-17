@@ -40,6 +40,7 @@ To start the bot, run the **<span>reaction.py</span>** file, you can accomplish 
 
     python3 reaction.py
 </br>
+
 If everything went right, you should get the following output:
 
 ![enter image description here](https://s7.gifyu.com/images/launching_bot_cropped.gif)
@@ -47,12 +48,15 @@ If everything went right, you should get the following output:
 ## Adding image
  Once the bot is running, you just need to **send an image** you want the bot to react in a selected channel (view **<span>config</span>.py**), make sure the file you are adding is either a **png** or **jpg/jpeg** file.
  </br>
+
  ![enter image description here](https://s7.gifyu.com/images/sending_pic_bot_gif.gif)
 ## Average score
 The bot will automatically **calculate the average score** and say it on the chat. When a new reaction is added, the score is recalculated and **the message is edited** no matter its position in the channel history.
 </br>
+
 ![enter image description here](https://s7.gifyu.com/images/calculating_average_bot.gif)
 ## Double vote
 To avoid double votes, when a new reaction is added, the bot scan the message and remove any reactions from the same user.
 </br>
+
 ![enter image description here](https://s7.gifyu.com/images/double_vote_bot.gif)
