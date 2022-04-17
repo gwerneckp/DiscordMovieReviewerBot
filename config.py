@@ -1,6 +1,6 @@
 #config options
 BOT_USER_ID = 0 #e: 123456789012345678
-ALLOWED_CHANNELS = [] #e: [000000000000000000, 000000000000000001, 000000000000000002]
+ALLOWED_CHANNELS = [""] #e: [000000000000000000, 000000000000000001, 000000000000000002]
 CLIENT_TOKEN = "" #e: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ._12345"
 
 #ignore
@@ -19,6 +19,5 @@ if CLIENT_TOKEN == "":
     missing_info = True
 
 if missing_info == True:
-    print("\n")
     a = input('Press enter to exit ...\n')
     exit(0)
