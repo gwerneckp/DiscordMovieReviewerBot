@@ -1,9 +1,9 @@
 # Movie Reviewer Discord Bot!
 
-This bot was created with the purpose of helping friends **review movies** after a movie night on discord. When a photo is posted in a selected channel, the bot will add 5 reactions to it. After a new reaction is added, he will verify the user has not voted twice and calculate the average score given by the users.
+This bot was created with the purpose of helping friends **review movies** on discord. When an image is posted in a selected channel, the bot will add 5 reactions to it. After a new reaction from a user, the bot will remove double votes and calculate the average score.
 
 ## Get started:
-To get started, you first need to modify the **<span>config</span>.py** file with the needed parameters as showed below:
+To get started, you first need to modify the **<span>config</span>.py** file with the required parameters as in the exemple below:
 
     BOT_USER_ID = 795736328632270899
     ALLOWED_CHANNELS = [805931582149099600, 4159525192383725001]
@@ -12,7 +12,7 @@ To get started, you first need to modify the **<span>config</span>.py** file wit
 **Do not share your CLIENT_TOKEN with anyone, this will give them full access to control your bot.**
 <br>
 
-Make sure you also have installed all dependencies listed in the **requirements.txt** file:
+Make sure you also have installed all dependencies listed in **requirements.txt** file:
 
     aiohttp==3.7.4.post0
     async-timeout==3.0.1
@@ -35,10 +35,10 @@ Be aware, this will install the dependencies in the system directory, if you do 
 ## Launching bot
 To start the bot, run the **<span>reaction.py</span>** file, you can accomplish by either double-clicking on the file or by running one of the following commands:
 
-    python reaction.py
+    $ python reaction.py
 </br>
 
-    python3 reaction.py
+    $ python3 reaction.py
 </br>
 
 If everything went right, you should get the following output:
@@ -46,7 +46,7 @@ If everything went right, you should get the following output:
 ![enter image description here](https://s7.gifyu.com/images/launching_bot_cropped.gif)
 
 ## Adding image
- Once the bot is running, you just need to **send an image** you want the bot to react in a selected channel (view **<span>config</span>.py**), make sure the file you are adding is either a **png** or **jpg/jpeg** file.
+ Once the bot is running, you just need to **send an image** you want the bot to react in a selected channel (view **<span>config</span>.py**), make sure the image you are sending is either a **png** or **jpg/jpeg** file.
  </br>
 
  ![enter image description here](https://s7.gifyu.com/images/sending_pic_bot_gif.gif)
