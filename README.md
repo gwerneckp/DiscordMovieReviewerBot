@@ -56,7 +56,7 @@ The bot will automatically **calculate the average score** and say it on the cha
 
 ![enter image description here](https://s7.gifyu.com/images/calculating_average_bot.gif)
 ## Double vote
-To avoid double votes, when a new reaction is added, the bot scan the message and remove any reactions from the same user.
+To avoid double votes, when a new reaction is added, the bot scans the message and remove any reactions from the same user.
 </br>
 
 ![enter image description here](https://s7.gifyu.com/images/double_vote_bot.gif)
